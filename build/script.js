@@ -29,14 +29,24 @@ addToCartButton.forEach(button => {
         const plusButton = button.querySelector(".fa-circle-plus");
         const minusButton = button.querySelector(".fa-circle-minus");
         
+        cartQuantity.innerHTML = buttonCounterQuantity
 
         plusButton.addEventListener("click", () => {
             buttonCounterQuantity ++
         })
 
-        cartQuantity.innerHTML = buttonCounterQuantity
+        minusButton.addEventListener('click', () => {
+            // make it not to go below zero
+            if(buttonCounterQuantity > 0 ){
+                buttonCounterQuantity --
+            }
+            
+        })
 
-    }) 
+    })
+
+    
+    
 })
 
 
