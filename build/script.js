@@ -20,12 +20,11 @@ addToCartButton.forEach(button => {
         button.style.border = "none"
         button.style.padding = "5px 10px";
         button.innerHTML = `
-        <i class="fa-solid fa-circle-minus hover:bg-blue-700"></i>
+        <i class="fa-solid fa-circle-minus"></i>
         <p class = "button-counter"> ${buttonCounterQuantity} </p>
         <i class="fa-solid fa-circle-plus"></i>`
 
 
-        const buttonCounter = button.querySelector(".button-counter");
         const plusButton = button.querySelector(".fa-circle-plus");
         const minusButton = button.querySelector(".fa-circle-minus");
         
